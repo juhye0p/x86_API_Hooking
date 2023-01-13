@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <Windows.h>
 #include <stdlib.h>
+#include <Windows.h>
 
 int main() {
 	printf("[*] Waiting for any key...\n");

@@ -20,7 +20,7 @@ DWORD GetPID() {
 
     if (Process32First(hProcess, &pe32)) {
         do {
-            if (!wcscmp(pe32.szExeFile, TEXT("MSGBOX.exe"))) {
+            if (!wcscmp(pe32.szExeFile, TEXT("Target.exe"))) {
                 return pe32.th32ProcessID;
             }
         } while (Process32Next(hProcess, &pe32));
