@@ -12,7 +12,7 @@ BYTE g_OrgByte[5] = { 0, };
 BOOL Hook_Code(LPCSTR szDllName, LPCSTR szFuncName, PROC pfNew) {
     FARPROC pfOrg;
     DWORD dwOldProtect, dwAddress;
-    BYTE pBuf[5] = { 0xE9, 0, }; //jmp 0x00000000
+    BYTE pBuf[5] = { 0xE9, 0, }; //jmp 0x00000000 
     PBYTE pByte;
 
     //Get The Target API Address
